@@ -1,0 +1,36 @@
+00000               lsli    i5 rm rd
+00001               lsri    i5 rm rd
+00010               asri    i5 rm rd
+0001100             addr    rm rn rd
+0001101             subr    rm rn rd
+00100               movi    rd i8
+00110               addi    rdn i8
+00111               subi    rdn i8
+0100000000          andr    rdn rm
+0100000001          eorr    rdn rm
+0100000010          lslr    rdn rm
+0100000011          lsrr    rdn rm
+0100001001          negr    rdn rm
+0100001100          orr     rdn rm
+0100001101          mulr    rdmn rn
+0100001111          movnr   rd rm
+0100011010          movrsp  rm 101
+0100011100          br      rm 000
+01001               ldrpci  rd i8
+0101000             strr    rm rn rt
+0101100             ldrr    rm rn rt
+01100               stri    i5 rn rt
+01101               ldri    i5 rn rt
+10010               strspi  rt i8
+10011               ldrspi  rt i8
+10100               addpci  rd i8
+10101               addspi  rdn i8
+101100000           incsp   i7
+101100001           decsp   i7
+1011010100000000    push
+1011110100000000    pop
+1101                b{}     {} i8
+11011111            svc     i8
+11100               bu      i11
+111100              bl1     i10
+11111               bl2     i11
